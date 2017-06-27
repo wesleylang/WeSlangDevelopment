@@ -2,10 +2,12 @@
 <html lang="en">
 
 	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>We Slang Development</title>
         <style>
-            ul{
+            #navigation{
                 position: fixed;
                 top: 0;
                 width:100%;
@@ -16,7 +18,7 @@
                 background-color: #333;
             }
             li{
-                float: left;
+                float: right;
             }
             
             li a{
@@ -25,6 +27,10 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+            }
+            
+            .active {
+                background-color: #196E77;
             }
         </style>
 	</head>
@@ -36,22 +42,24 @@
 
 	<body>
 		<div id="header" class="w3.container">
-			<ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
+			<ul id='navigation'>
+            <div class = 'navigation'>
+                <ul>
+                    <li><a class="active" href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
 		</div>
 
 
 		<div id="content" class="w3.container">
-			            <h1> Contact Us</h1>
+			
 		</div>
 
 
 		<div id="footer" class="w3.container">
 			
 		</div>
-
 	</body>
 </html>
