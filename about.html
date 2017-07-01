@@ -32,6 +32,37 @@
             .active {
                 background-color: #196E77;
             }
+
+
+            /* Create a Parallax Effect */
+			.bgimg-1, .bgimg-2, .bgimg-3 {
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 1024px) {
+			    .bgimg-1, .bgimg-2, .bgimg-3 {
+			        background-attachment: scroll;
+			    }
+			}
+
+			.bgimg-1 {
+			    background-image: url("images/TemporaryLogoBig.jpg");
+			    min-height: 500px;
+			}
+
+			.bgimg-2 {
+			    background-image: url("images/19366110_1383108398440971_4752910610074933755_n.jpg");
+			    min-height: 600px;
+			}
+
+			.bgimg-3 {
+			    background-image: url("images/11659293_10153099635599005_7780664541875081599_n.jpg");
+			    min-height: 600px;
+			}
         </style>
 	</head>
     
@@ -51,63 +82,24 @@
 
 
 		<div id="content" class="w3.container">
-			<div class="w3-container w3-padding-32" id="projects">
-				<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+
+
+			<div class="bgimg-1"></div>
+			<div class="w3-content w3-container" id="aboutWeSlang">
+				<h2 class="w3-center">We Slang Development</h2>
+				<p class="w3-center"><i>"We started as a joke"</i></p>
+				<p>We Slang Development started as a group of friends joking around about one day getting together and building a company together. As the years have gone by, the joke stuck in the back of our minds and soon became a hope. A hope and eventually a dream. Now that dream has become a reality in the form of <b>We Slang Development</b>.</p>
+				<p>We Slang Development is a play on words on one of the founder's name, <b>Wesley Lang</b>. The play on words also takes from modern slang to mean <em>"We sell development".</em></p>
 			</div>
 
-			<div class="w3-row-padding">
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-				    <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-				    <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-				    <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-				    <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-				  </div>
-				</div>
+			<div class="bgimg-2"></div>
+			<div class="w3-content w3-container" id="aboutWesley">
+
 			</div>
 
-			<div class="w3-row-padding">
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-				    <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-				    <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-				    <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-				  </div>
-				</div>
-				<div class="w3-col l3 m6 w3-margin-bottom">
-				  <div class="w3-display-container">
-				    <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-				    <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-				  </div>
-				</div>
-			</div>
+			<div class="bgimg-3"></div>
+			<div class="w3-content w3-container" id="aboutJames"></div>
+			
 		</div>
 
 

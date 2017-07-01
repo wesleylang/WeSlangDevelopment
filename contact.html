@@ -32,6 +32,37 @@
             .active {
                 background-color: #196E77;
             }
+
+            /* Create a Parallax Effect */
+			.bgimg-1, .bgimg-2, .bgimg-3 {
+			    background-attachment: fixed;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			}
+
+			/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+			@media only screen and (max-device-width: 1024px) {
+			    .bigimg-1, .bgimg-2, .bgimg-3 {
+			        background-attachment: scroll;
+			    }
+			}
+
+			.bgimg-1 {
+			    background-image: url('/images/TemporaryLogoBig.jpg');
+			    min-height: 100%;
+			}
+
+			.bgimg-2 {
+			    background-image: url("/images/19366110_1383108398440971_4752910610074933755_n.jpg");
+			    min-height: 400px;
+			}
+
+			.bgimg-3 {
+			    background-image: url("/images/11659293_10153099635599005_7780664541875081599_n.jpg");
+			    min-height: 400px;
+			}
+
         </style>
 	</head>
     
@@ -55,6 +86,12 @@
 
 		<div id="content" class="w3.container">
 			
+			<div class="bgimg-1"></div>
+
+			<div class="bgimg-2"></div>
+
+			<div class="bgimg-3"></div>
+
 		</div>
 
 
