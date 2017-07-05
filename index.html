@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <title>We Slang Development</title>
         <style>
+						body {
+							margin: 0;
+						}
             #navigation{
                 position: fixed;
                 top: 0;
@@ -20,7 +23,7 @@
             li{
                 float: right;
             }
-            
+
             li a{
                 display: block;
                 color: white;
@@ -28,13 +31,75 @@
                 padding: 14px 16px;
                 text-decoration: none;
             }
-            
+
             .active {
                 background-color: #196E77;
             }
+
+						/* styles for the footer */
+						#footer {
+							text-align: center;
+							color: gainsboro;
+							position: relative;
+						}
+						#footer object {
+							pointer-events: none;
+						}
+						#footer-arrow {
+							position: absolute;
+							right: 10px;
+							top: 1.5em;
+						}
+						.footer-div-top {
+							background-color: #333;
+						}
+						.footer-div-top ul {
+							list-style-type: none;
+						}
+						#social-icons {
+							padding-top: 0;
+						}
+						#social-icons, #nav-links {
+							display: inline-block;
+							margin-bottom: 0;
+						}
+						#nav-links{
+							text-transform: uppercase;
+							letter-spacing: 0.2em;
+							margin-top: -18px;
+							margin-bottom: -10px;
+						}
+						#footer-contact-info {
+							padding-top: 3px;
+							padding-bottom: 10px;
+							margin-top: 0;
+							margin-bottom: 0;
+							color: rgba(220, 220, 220, .5);
+							letter-spacing: .6px;
+						}
+						.footer-div-bottom p {
+							margin-top: 0;
+							margin-bottom: 0;
+							background-color: rgb(25, 110, 119);
+						}
+						#footer-tagline {
+							padding-top: 8px;
+							font-size: 1.5em;
+							text-shadow: 2px 2px rgba(33, 33, 33, .3);
+						}
+						#footer-copyright {
+							padding-bottom: 1em;
+							text-transform: uppercase;
+							font-size: .75em;
+						}
+						#footer-credits {
+							background-color: #333;
+							font-size: 10px;
+							padding: 5px;
+						}
         </style>
 	</head>
-    
+
 
 
 
@@ -117,7 +182,34 @@
 
 
 		<div id="footer" class="w3.container">
-			
+			<div class="footer-div-top">
+				<a id="footer-arrow" href="#content"><object data=images/up-arrow.svg type="image/svg+xml" width=50px height=50px;></object></a>
+			<ul id="social-icons">
+				<li><a href="https://www.facebook.com/james.chee.313" target="_blank"><object data="images/facebook.svg" type="image/svg+xml" width="50px" height="50px"></object></a></li>
+				<li><a href="" target="_blank"><object data="images/github.svg" type="image/svg+xml" width="50px" height="50px"></object></a></li>
+				<li><a href="" target="_blank"><object data="images/linkedin.svg" type="image/svg+xml" width="50px" height="50px"></object></a></li>
+				<li><a href="https://twitter.com/Jameschee909" target="_blank"><object data="images/twitter.svg" type="image/svg+xml" width="50px" height="50px"></object></a></li>
+			</ul>
 		</div>
+
+		<div class="footer-div-top">
+			<ul id="nav-links">
+				<li><a href="contact.html">contact us</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="">projects</a></li>
+				<li><a href="index.html">home</a></li>
+			</ul>
+		</div>
+
+		<div class="footer-div-top">
+			<p id="footer-contact-info">&#x260E; 909-662-7519 | weslangdev@gmail.com</p>
+		</div>
+
+		<div class="footer-div-bottom">
+			<p id="footer-tagline">Efficient software development and design.</p>
+			<p id="footer-copyright"><small>Copyright &copy;2017 WeSlang Development | All Rights Reserved</small></p>
+			<div id="footer-credits">Icons made by <a href="http://www.flaticon.com/authors/pixel-buddha" title="Pixel Buddha">Pixel Buddha</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+		</div>
+		</div> <!-- end of footer -->
 	</body>
 </html>
