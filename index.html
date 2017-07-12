@@ -10,6 +10,9 @@
 	body {
 		margin: 0;
 	}
+	a {
+		outline: none;
+	}
 	#navigation{
 		position: fixed;
 		top: 0;
@@ -49,6 +52,11 @@
 		position: absolute;
 		right: 10px;
 		top: 1.5em;
+	  transition: 2s;
+	}
+	#footer-arrow:hover {
+		transform: translateY(-8px);
+		transition: 2s;
 	}
 	.footer-div-top {
 		background-color: #333;
@@ -63,11 +71,17 @@
 		display: inline-block;
 		margin-bottom: 0;
 	}
+	#social-icons a:hover {
+		transform: scale(1.1, 1.1);
+	}
 	#nav-links{
 		text-transform: uppercase;
 		letter-spacing: 0.2em;
 		margin-top: -18px;
 		margin-bottom: -10px;
+	}
+	#nav-links a:hover {
+		opacity: .5;
 	}
 	#footer-contact-info {
 		padding-top: 3px;
