@@ -108,7 +108,28 @@
 						#contact input[type="tel"]:hover,
 						#contact input[type="url"]:hover,
 						#contact textarea:hover {
-							
+							transition: background-color 0.3s ease-in-out;
+						}
+
+						#contact textarea{
+							height: 100px;
+							max-width: 100%;
+							resize: none;
+						}
+
+						#contact button[type="submit"]{
+							cursor: pointer;
+							width: 100%;
+							border: none;
+							background: #196E77;
+							color: white;
+							margin: 0 0 5px;
+							padding: 10px;
+							font-size: 15px;
+						}
+
+						#contact button[type="submit"]:active{
+							box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 						}
 
         </style>
